@@ -7,18 +7,19 @@
     <title>Tela de Login</title>
     <link rel="stylesheet" href="/assets/css/login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/assets/js/api/controle/usuarios.js"></script>
 </head>
 <body>
     
     <div class="container">
-        <form action="">
+        <form onsubmit="App()">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Nome" required>
+                <input type="text" name="nome" placeholder="Nome" onchange="" value="" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="senha" required>
+                <input type="password" name="senha" placeholder="senha" onchange="" value="" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
